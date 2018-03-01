@@ -4,7 +4,7 @@
   "description": "A node module for getting a file tree.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -18,13 +18,17 @@
     "finder"
   ],
   "author": {
-		"name": "Adam MacDonald-Corrao",
-		"email": "adam@adammy.com",
-		"url": "https://github.com/adammy"
-	},
+    "name": "Adam MacDonald-Corrao",
+    "email": "adam@adammy.com",
+    "url": "https://github.com/adammy"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/adammy/node-file-tree/issues"
   },
-  "homepage": "https://github.com/adammy/node-file-tree#readme"
+  "homepage": "https://github.com/adammy/node-file-tree#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1"
+  }
 }
