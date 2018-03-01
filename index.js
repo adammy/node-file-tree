@@ -2,7 +2,7 @@ const fs = require('fs'),
 	path = require('path'),
 	filesToIgnore = ['.DS_Store', 'Thumbs.db'];
 
-const fileTree = (folderPath, recursive = false, query = null) => {
+const fileTree = (folderPath, recursive = false) => {
 
 	// all of the error checking
 	if (!folderPath) {
