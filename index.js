@@ -1,9 +1,8 @@
 const fs = require('fs'),
 	path = require('path'),
-	filesToIgnore = ['.DS_Store', 'Thumbs.db'],
-	util = require('util');
+	filesToIgnore = ['.DS_Store', 'Thumbs.db'];
 
-const getFiles = (folderPath, recursive = false, query = null) => {
+const fileTree = (folderPath, recursive = false, query = null) => {
 
 	// all of the error checking
 	if (!folderPath) {
@@ -38,7 +37,7 @@ const getFiles = (folderPath, recursive = false, query = null) => {
 
 			// if recursive = true, then create files property that recursively calls this function
 			if (recursive && fileObj.isDir) {
-				fileObj.files = getFiles(fileObj.fullPath, true);
+				fileObj.files = fileTree(fileObj.fullPath, true);
 			}
 
 			return fileObj;
@@ -57,6 +56,4 @@ const getFiles = (folderPath, recursive = false, query = null) => {
 
 };
 
-console.log( util.inspect(getFiles('./emails/build', true), false, null) );
-
-// module.exports = getFiles;
+module.exports = fileTree;
