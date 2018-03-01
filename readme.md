@@ -1,12 +1,12 @@
 # Node File Tree
 ### A node module for getting a tree-based structure of files.
 
-#### Installation
+### Installation
 ```sh
 npm install node-file-tree --save
 ```
 
-#### Usage
+### Usage
 Reference the fileTree function like so:
 ```javascript
 const myFiles = fileTree('./myFolder');
@@ -37,7 +37,7 @@ fileTree returns an array of objects that will look like the following:
 ]
 ```
 
-#### Arguments
+### Arguments
 When calling the fileTree function, you can pass it two arguments to alter its behavior. The first argument is the path you want the module to traverse. The second argument determines whether the script to be recursive or not (basically do you want the root files or the root files and all of its subfolders/files).
 
 Details of each setting are below:
