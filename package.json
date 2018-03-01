@@ -1,6 +1,6 @@
 {
   "name": "node-file-tree",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A node module for getting a file tree.",
   "main": "index.js",
   "scripts": {
