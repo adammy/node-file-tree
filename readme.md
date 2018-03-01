@@ -7,8 +7,9 @@ npm install node-file-tree --save
 ```
 
 ### Usage
-Reference the fileTree function like so:
+Import and reference the fileTree function like so:
 ```javascript
+const fileTree = require('node-file-tree');
 const myFiles = fileTree('./myFolder');
 ```
 fileTree returns an array of objects that will look like the following:
