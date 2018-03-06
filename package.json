@@ -17,11 +17,7 @@
     "tree",
     "finder"
   ],
-  "author": {
-    "name": "Adam MacDonald-Corrao",
-    "email": "adam@adammy.com",
-    "url": "https://github.com/adammy"
-  },
+  "author": "Adam MacDonald-Corrao <adammacdonaldcorrao@gmail.com> (http://adammy.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/adammy/node-file-tree/issues"
