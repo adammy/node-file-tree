@@ -5,15 +5,9 @@ const fs = require('fs'),
 const fileTree = (folderPath, recursive = false) => {
 
 	// all of the error checking
-	if (!folderPath) {
-		return new Error('getFiles() was called without a folderPath argument');
-	}
-	if (typeof folderPath != 'string') {
-		return new Error('getFiles() was called with an invalid folderPath argument; it must be of type String');
-	}
-	if (typeof recursive != 'boolean') {
-		return new Error('getFiles() was called with an invalid recursive argument; it must be of type Boolean')
-	}
+	if (!folderPath) return new Error('getFiles() was called without a folderPath argument');
+	if (typeof folderPath != 'string') return new Error('getFiles() was called with an invalid folderPath argument; it must be of type String');
+	if (typeof recursive != 'boolean') return new Error('getFiles() was called with an invalid recursive argument; it must be of type Boolean');
 
 	const files = fs.readdirSync(folderPath)
 
